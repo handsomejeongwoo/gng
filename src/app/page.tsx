@@ -1,22 +1,19 @@
 'use client'
 
-import Image, { type StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { useMemo, useState } from 'react'
-import daouLogo from '../../public/images/다우.png'
-import lucyLogo from '../../public/images/루시.png'
-import winglobalLogo from '../../public/images/윈글로벌.png'
 
 type Lang = 'ko' | 'en' | 'ja'
 
 type Partner = {
   name: string
-  logo: StaticImageData
+  logo: string
 }
 
 const partners: Partner[] = [
-  { name: '윈글로벌', logo: winglobalLogo },
-  { name: '다우', logo: daouLogo },
-  { name: '루시', logo: lucyLogo },
+  { name: '윈글로벌', logo: '/images/winglobal.png' },
+  { name: '다우', logo: '/images/daou.png' },
+  { name: '루시', logo: '/images/lucy.png' },
 ]
 
 const copy = {
