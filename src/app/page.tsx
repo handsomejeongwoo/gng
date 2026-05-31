@@ -9,7 +9,7 @@ const copy = {
     nav: ['수수료', '입점 절차', '후기', 'FAQ', '상담신청'],
     phone: '전화 상담',
     heroKicker: 'PG 본사가 인정하는 정식 등록 결제대행',
-    heroTitle: 'Good&Good, 결제 도입을 더 빠르고 명확하게.',
+    heroTitle: '굳앤굳페이, 결제 도입을 더 빠르고 명확하게.',
     heroBody:
       '온라인 쇼핑몰부터 오프라인 매장까지, 업종과 매출 구조에 맞는 결제 조건을 상담하고 입점까지 안내합니다.',
     primaryCta: '가맹점 상담신청',
@@ -52,7 +52,7 @@ const copy = {
     contactTitle: '가맹점 상담신청',
     contactBody: '담당자가 확인 후 연락드립니다. 빠른 상담이 필요하면 전화 상담을 이용해 주세요.',
     form: ['회사명', '담당자명', '연락처', '업종', '월 예상 매출', '문의 내용'],
-    placeholders: ['굿앤굿상점', '홍길동', '010-0000-0000', '온라인 쇼핑몰', '예: 5,000만원', '필요한 결제 방식이나 현재 상황을 남겨주세요.'],
+    placeholders: ['굳앤굳상점', '홍길동', '010-0000-0000', '온라인 쇼핑몰', '예: 5,000만원', '필요한 결제 방식이나 현재 상황을 남겨주세요.'],
     agree: '개인정보 수집 및 상담 연락에 동의합니다.',
     submit: '상담 접수하기',
     center: '고객센터',
@@ -61,7 +61,7 @@ const copy = {
     nav: ['Fees', 'Onboarding', 'Reviews', 'FAQ', 'Contact'],
     phone: 'Call',
     heroKicker: 'Registered payment agency recognized by PG partners',
-    heroTitle: 'Good&Good Pay makes payment onboarding clearer.',
+    heroTitle: '굳앤굳페이 makes payment onboarding clearer.',
     heroBody:
       'We guide online stores and offline merchants through payment options, conditions, and onboarding steps.',
     primaryCta: 'Request consultation',
@@ -171,8 +171,8 @@ export default function Home() {
   return (
     <main className="site-shell">
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="굿앤굿페이 home">
-          <img className="brand-logo" src="/images/logo.jpeg" alt="굿앤굿페이" />
+        <a className="brand" href="#top" aria-label="굳앤굳페이 home">
+          <img className="brand-logo" src="/images/logo.jpeg" alt="굳앤굳페이" />
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {t.nav.map((item: string, index: number) => (
@@ -320,7 +320,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="footer-brand">
-          <strong>Good&Good</strong>
+          <strong>굳앤굳페이</strong>
           <span>푸터 내용 1</span>
           <span>푸터 내용 2</span>
         </div>
