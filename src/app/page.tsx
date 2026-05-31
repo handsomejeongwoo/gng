@@ -1,8 +1,23 @@
 'use client'
 
+import Image, { type StaticImageData } from 'next/image'
 import { useMemo, useState } from 'react'
+import daouLogo from '../../public/images/다우.png'
+import lucyLogo from '../../public/images/루시.png'
+import winglobalLogo from '../../public/images/윈글로벌.png'
 
 type Lang = 'ko' | 'en' | 'ja'
+
+type Partner = {
+  name: string
+  logo: StaticImageData
+}
+
+const partners: Partner[] = [
+  { name: '윈글로벌', logo: winglobalLogo },
+  { name: '다우', logo: daouLogo },
+  { name: '루시', logo: lucyLogo },
+]
 
 const copy = {
   ko: {
@@ -263,11 +278,14 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <div className="partner-strip" aria-label="Partner placeholders">
-          <span>PG Partner</span>
-          <span>Card Network</span>
-          <span>Commerce</span>
-          <span>Offline Store</span>
+        <div className="partners-section">
+          <p className="section-kicker">Partners</p>
+          <h3>굳앤굳페이와 함께하는 협력사</h3>
+          <div className="partner-grid" aria-label="협력사">
+            {partners.map((partner) => (
+              <PartnerCard key={partner.name} partner={partner} />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -330,5 +348,15 @@ export default function Home() {
         </div>
       </footer>
     </main>
+  )
+}
+
+function PartnerCard({ partner }: { partner: Partner }) {
+  return (
+    <article className="partner-card">
+      <div className="partner-logo-box">
+        <Image src={partner.logo} alt={`${partner.name} 로고`} fill sizes="(max-width: 940px) 100vw, 33vw" />
+      </div>
+    </article>
   )
 }
