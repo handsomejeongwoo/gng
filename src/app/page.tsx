@@ -11,15 +11,16 @@ type Partner = {
 }
 
 const partners: Partner[] = [
+  { name: '루시', logo: '/images/lucy.png' },
   { name: '윈글로벌', logo: '/images/winglobal.png' },
   { name: '다우', logo: '/images/daou.png' },
-  { name: '루시', logo: '/images/lucy.png' },
 ]
 
 const copy = {
   ko: {
     nav: ['수수료', '입점 절차', '후기', 'FAQ', '상담신청'],
     phone: '전화 상담',
+    heroTagline: '대형 병원 전문 PG결제 대행업체',
     heroKicker: 'PG 본사가 인정하는 정식 등록 결제대행',
     heroTitle: '굳앤굳페이, 결제 도입을 더 빠르고 명확하게.',
     heroBody:
@@ -72,6 +73,7 @@ const copy = {
   en: {
     nav: ['Fees', 'Onboarding', 'Reviews', 'FAQ', 'Contact'],
     phone: 'Call',
+    heroTagline: 'PG payment agency specialized in large hospitals',
     heroKicker: 'Registered payment agency recognized by PG partners',
     heroTitle: '굳앤굳페이 makes payment onboarding clearer.',
     heroBody:
@@ -124,6 +126,7 @@ const copy = {
   ja: {
     nav: ['手数料', '導入手順', '事例', 'FAQ', '相談申込'],
     phone: '電話相談',
+    heroTagline: '大型病院専門 PG決済代行業者',
     heroKicker: 'PG本社が認める正式登録決済代行',
     heroTitle: 'グッドアンドグッドペイが決済導入を明確にします。',
     heroBody:
@@ -210,6 +213,7 @@ export default function Home() {
       <section id="top" className="hero-section">
         <div className="hero-bg" aria-hidden="true" />
         <div className="hero-content">
+          <p className="hero-tagline">{t.heroTagline}</p>
           <p className="eyebrow">{t.heroKicker}</p>
           <h1>{t.heroTitle}</h1>
           <p className="hero-body">{t.heroBody}</p>

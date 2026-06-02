@@ -181,6 +181,14 @@ a {
   align-self: center;
 }
 
+.hero-tagline {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
 .eyebrow,
 .section-kicker {
   margin: 0 0 14px;
